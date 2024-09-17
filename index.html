@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="icon" href="./questionMark.png">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Playball&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+   <title>Gues the number</title>
+   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <script defer src="script.js"></script>
+   <style>
+     * {
+        font-family: "Jersey 10", sans-serif;
+     }
+
+     .rtl {
+        direction: rtl !important;
+     }
+     .ltr {
+        direction: ltr !important;
+     }
+     
+     .karantina-bold {
+        font-family: "Karantina", system-ui;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .text-shadow {
+        text-shadow: 2px 4px 5px #2d2d2d87;
+    }
+
+    a {
+  text-decoration: none;
+  color: unset;
+}
+   </style>
+ </head>
+<body class="bg-danger-subtle">
+    <div class="container">
+        <div class="col 12 d-flex flex-column align-items-center justify-content-center">          
+            <div class="col p-4 d-flex flex-column align-items-center justify-content-center rtl">
+                <div class="rounded-circle">
+                    <img width="140" height="140" id="pic_emoji_id" src="https://icons.iconarchive.com/icons/hopstarter/brown-monsters/256/Brown-Monsters-30-icon.png" alt="funny face">
+                </div>
+                <h2 class="fw-normal display-1 text-shadow text-center karantina-bold">ברוכים הבאים למשחק: "נחש את המספר!"</h2>
+                <h2 class="fw-normal display-4 text-shadow text-center karantina-bold">נוצר ע"י moti oved</h2>
+                <div class="text-center">
+                    <p class="rtl fs-4 text-shadow karantina-bold" id="text">הגרלנו מספר, אנא עזרו לפרצופון שלנו לנחש את המספר שהוגרל מאחורי הקלעים.</p>
+                </div>
+                  <div class="input-group mb-3 ltr">
+                    <input type="text" class="form-control rtl fs-3" id="input" placeholder=" ..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button id="btn" class="btn btn-outline-secondary" onclick="guessTheNumber()" type="button" id="button-addon2">אישור</button>
+                  </div>
+                  <div class="col">
+                     <button onclick="resetGame()" class="btn btn-danger">משחק חדש</button>
+                     <button class="btn btn-danger"><a href="../../index.html">חזרה למסך הבית</a></button>
+                  </div>
+              </div>
+          </div>
+    </div>
+</body>
+</html>
